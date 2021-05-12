@@ -1,11 +1,11 @@
 import "package:flutter/material.dart";
 import 'package:intern_flutter/Widgets/Col.dart';
 import 'package:intern_flutter/Widgets/Dropdown2.dart';
-import 'package:step_progress_indicator/step_progress_indicator.dart';
 import 'MakeWidgets/MakeTable1.dart';
 import 'MakeWidgets/MakeTable2.dart';
 import 'MakeWidgets/MakeTable3.dart';
 import 'MakeWidgets/MakeTimeline.dart';
+import 'Widgets/Indicator.dart';
 import 'Widgets/dropdown.dart';
 import 'Widgets/Textall.dart';
 import 'Widgets/Button.dart';
@@ -37,18 +37,43 @@ class Home extends StatelessWidget {
               ),
               SizedBox(height: 20),
               Container(
-                margin: EdgeInsets.all(15),
+                // margin: EdgeInsets.all(15),
+                margin: EdgeInsets.fromLTRB(65, 15, 15, 15),
+
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  // crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    StepProgressIndicator(
-                      direction: Axis.vertical,
-                      totalSteps: 10,
-                      currentStep: 6,
-                      selectedColor: Colors.red,
-                      unselectedColor: Colors.yellow,
-                    ),
+                    Column(children: [
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Indicatorline(colour: Color(0xBF007AFF), rad: 3),
+                      Indicatorline(colour: Color(0xff007AFF)),
+                      Row(
+                        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Indicatorline(
+                              colour: Color(0xffFFB946), width: 18, rad: 3),
+                          // SizedBox(
+                          //   width: 10,
+                          // ),
+                          // Container(
+                          //   padding: EdgeInsets.all(10),
+                          //   decoration: BoxDecoration(
+                          //       color: Color(0xffFFB946),
+                          //       borderRadius: BorderRadius.circular(3)),
+                          //   child: Text(
+                          //     "Nuetral",
+                          //     style:
+                          //         TextStyle(color: Colors.black, fontSize: 18),
+                          //   ),
+                          // ),
+                        ],
+                      ),
+                      Indicatorline(colour: Color(0xffFF2E50)),
+                      Indicatorline(colour: Color(0xBFFF2E50), rad: 3),
+                    ]),
                     MakeTimeline(),
                   ],
                 ),

@@ -10,8 +10,8 @@ class MakeTable3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         height: 250,
-        padding: EdgeInsets.all(4),
-        margin: EdgeInsets.all(4),
+        padding: EdgeInsets.all(8),
+        margin: EdgeInsets.all(8),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
