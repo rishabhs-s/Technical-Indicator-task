@@ -13,15 +13,15 @@ class Tablerow extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         new Expanded(
-          flex: 6,
+          flex: 4,
           child: Text(
             period,
-            style: textrowc1,
+            style: textrowt2,
             textAlign: TextAlign.left,
           ),
         ),
         new Expanded(
-          flex: 6,
+          flex: 3,
           child: Text(
             value,
             textAlign: TextAlign.left,
@@ -29,10 +29,10 @@ class Tablerow extends StatelessWidget {
           ),
         ),
         new Expanded(
-          flex: 3,
+          flex: 2,
           child: Text(
             type,
-            textAlign: TextAlign.left,
+            textAlign: TextAlign.right,
             style: typecol,
           ),
         ),

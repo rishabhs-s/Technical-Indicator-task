@@ -8,28 +8,28 @@ class Table3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 34,
-      padding: EdgeInsets.all(4),
-      margin: EdgeInsets.all(4),
-      child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  txt1,
-                  style: textrowt2_3,
-                ),
-                Text(
-                  txt2,
-                  style: textrowc1,
-                )
-              ],
-            )
-          ]),
+    // return Container(
+    //   height: 34,
+    //   padding: EdgeInsets.all(4),
+    //   margin: EdgeInsets.all(4),
+    //   child: Column(
+          // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          // crossAxisAlignment: CrossAxisAlignment.center,
+    //       children: [
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Text(
+          txt1,
+          style: textrowt2_3,
+        ),
+        Text(
+          txt2,
+          style: textrowc1,
+        )
+      ],
+      //   )
+      // ]),
     );
   }
 }

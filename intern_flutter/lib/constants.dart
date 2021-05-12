@@ -17,3 +17,5 @@ const textrowc1 =
     TextStyle(fontSize: 14, color: Colors.white, fontFamily: 'IBMPlex');
 const textrowt2_3 =
     TextStyle(fontSize: 14, color: Color(0x99FFFFFF), fontFamily: 'IBMPlex');
+    const textrowt2 =
+    TextStyle(fontSize: 14, color: Color(0x99FFFFFF), fontFamily: 'IBMPlex');

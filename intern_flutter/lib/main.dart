@@ -1,5 +1,3 @@
-// https://api.flutter.dev/flutter/material/Divider-class.html
-// https://pub.dev/packages/step_progress_indicator
 import 'package:flutter/material.dart';
 import 'package:intern_flutter/Home.dart';
 
